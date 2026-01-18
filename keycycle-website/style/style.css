@@ -1,0 +1,107 @@
+:root {
+    --green: #10b981;
+    --blue: #38bdf8;
+    --dark: #1f2937;
+    --light: #f9fafb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans Georgian', 'Roboto', sans-serif;
+    background: var(--light);
+    color: var(--dark);
+}
+
+nav {
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+nav .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+}
+
+nav a.active {
+    color: var(--green);
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo i {
+    transition: transform 0.4s;
+}
+
+.logo:hover i {
+    transform: rotate(180deg);
+}
+
+.tbc-logo img {
+    height: 40px;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--green), var(--blue));
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.page-header {
+    background: linear-gradient(135deg, var(--green), var(--blue));
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+}
+
+.info-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
